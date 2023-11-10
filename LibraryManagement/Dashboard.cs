@@ -16,5 +16,24 @@ namespace LibraryManagement
         {
             InitializeComponent();
         }
+
+        private void viewsBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Are you Sure You want to Exit?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Application.Exit(); 
+            }
+            
+        }
     }
 }
