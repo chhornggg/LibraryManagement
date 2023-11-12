@@ -79,13 +79,14 @@
             this.addNewBookToolStripMenuItem.Name = "addNewBookToolStripMenuItem";
             this.addNewBookToolStripMenuItem.Size = new System.Drawing.Size(377, 62);
             this.addNewBookToolStripMenuItem.Text = "Add New Book";
+            this.addNewBookToolStripMenuItem.Click += new System.EventHandler(this.addNewBookToolStripMenuItem_Click);
             // 
             // viewsBookToolStripMenuItem
             // 
             this.viewsBookToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewsBookToolStripMenuItem.Image")));
             this.viewsBookToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewsBookToolStripMenuItem.Name = "viewsBookToolStripMenuItem";
-            this.viewsBookToolStripMenuItem.Size = new System.Drawing.Size(324, 62);
+            this.viewsBookToolStripMenuItem.Size = new System.Drawing.Size(377, 62);
             this.viewsBookToolStripMenuItem.Text = " View Books";
             this.viewsBookToolStripMenuItem.Click += new System.EventHandler(this.viewsBookToolStripMenuItem_Click);
             // 
@@ -105,7 +106,7 @@
             this.addStudentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addStudentToolStripMenuItem.Image")));
             this.addStudentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(377, 62);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(355, 62);
             this.addStudentToolStripMenuItem.Text = "Add Student";
             // 
             // vIewStudentInfoToolStripMenuItem
@@ -113,7 +114,7 @@
             this.vIewStudentInfoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("vIewStudentInfoToolStripMenuItem.Image")));
             this.vIewStudentInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.vIewStudentInfoToolStripMenuItem.Name = "vIewStudentInfoToolStripMenuItem";
-            this.vIewStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(377, 62);
+            this.vIewStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(355, 62);
             this.vIewStudentInfoToolStripMenuItem.Text = "VIew Student Info";
             // 
             // issueBooksToolStripMenuItem
