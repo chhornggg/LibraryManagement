@@ -19,7 +19,8 @@ namespace LibraryManagement
 
         private void viewsBookToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ViewBook vb = new ViewBook();
+            vb.Show();
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
