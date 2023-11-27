@@ -48,5 +48,11 @@ namespace LibraryManagement
             IssueBooks ib = new IssueBooks();
             ib.Show();
         }
+
+        private void retuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReturnBook rb = new ReturnBook();
+            rb.Show();
+        }
     }
 }

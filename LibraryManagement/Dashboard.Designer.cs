@@ -133,6 +133,7 @@
             this.retuToolStripMenuItem.Name = "retuToolStripMenuItem";
             this.retuToolStripMenuItem.Size = new System.Drawing.Size(139, 54);
             this.retuToolStripMenuItem.Text = "Return Books";
+            this.retuToolStripMenuItem.Click += new System.EventHandler(this.retuToolStripMenuItem_Click);
             // 
             // bookDetailsToolStripMenuItem
             // 
@@ -161,7 +162,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
