@@ -27,7 +27,7 @@ namespace LibraryManagement
         {
             panel2.Visible = false;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-E4UJ6RE\\SQLEXPRESS; database = library; integrated security = true";
+            con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security=True";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
@@ -64,7 +64,7 @@ namespace LibraryManagement
             }
             panel2.Visible = true;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-E4UJ6RE\\SQLEXPRESS; database = library; integrated security = true";
+            con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
@@ -93,7 +93,7 @@ namespace LibraryManagement
             if(txtBookName.Text != "")
             {
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-E4UJ6RE\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -107,7 +107,7 @@ namespace LibraryManagement
             else
             {
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-E4UJ6RE\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -138,14 +138,15 @@ namespace LibraryManagement
                 Int64 quan = Int64.Parse(txtQuantity.Text);
 
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-E4UJ6RE\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
-                cmd.CommandText = "update NewBook set bName = '" + bname + "',bAuthor = '" + bauthor + "',bPulb='" + publication + "',bPDate='" + pdate + "',bPrice=" + price + ",bQuan=" + quan + " where bid=" + rowid + "";
+                cmd.CommandText = "update NewBook set bName = '" + bname + "',bAuthor = '" + bauthor + "',bPubl='" + publication + "',bPDate='" + pdate + "',bPrice=" + price + ",bQuan=" + quan + " where bid=" + rowid + "";
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds); // Error can't find database
+                this.Close();
             }
            
         }
@@ -155,7 +156,7 @@ namespace LibraryManagement
             if (MessageBox.Show("Data Will Deleted. Confirm?", "Confirmation Dialog", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-E4UJ6RE\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -163,6 +164,7 @@ namespace LibraryManagement
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds); // Error can't find database
+                this.Close();
             }
         }
     }
