@@ -65,5 +65,15 @@ namespace LibraryManagement
                 MessageBox.Show("Please fill the emply field", "suggest", MessageBoxButtons.OK, MessageBoxIcon.Information );
             }
         }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDepartment_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
