@@ -50,7 +50,7 @@ namespace LibraryManagement
                 String email = txtEmail.Text;
 
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security =True";
+                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security =True";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
