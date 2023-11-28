@@ -43,7 +43,7 @@ namespace LibraryManagement
                 Int64 quan = Int64.Parse(txtQuantity.Text);
 
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security=True";
+                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security=True";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
