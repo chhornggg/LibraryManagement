@@ -27,7 +27,7 @@ namespace LibraryManagement
         {
             panel2.Visible = false;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security=True";
+            con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security=True";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
@@ -64,7 +64,7 @@ namespace LibraryManagement
             }
             panel2.Visible = true;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
+            con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security = true";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
@@ -85,7 +85,10 @@ namespace LibraryManagement
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            panel2.Visible = false;
+            if (MessageBox.Show("Data Unsaved will be lost?", "Are you sure to cancel?", MessageBoxButtons.OK, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                this.Close();
+            }
         }
 
         private void txtBookName_TextChanged(object sender, EventArgs e)
@@ -93,7 +96,7 @@ namespace LibraryManagement
             if(txtBookName.Text != "")
             {
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -107,7 +110,7 @@ namespace LibraryManagement
             else
             {
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -138,7 +141,7 @@ namespace LibraryManagement
                 Int64 quan = Int64.Parse(txtQuantity.Text);
 
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -146,7 +149,8 @@ namespace LibraryManagement
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds); // Error can't find database
-                this.Close();
+
+                ViewBook_Load(this, null);
             }
            
         }
@@ -156,7 +160,7 @@ namespace LibraryManagement
             if (MessageBox.Show("Data Will Deleted. Confirm?", "Confirmation Dialog", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -164,7 +168,8 @@ namespace LibraryManagement
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds); // Error can't find database
-                this.Close();
+
+                ViewBook_Load(this, null); 
             }
         }
     }

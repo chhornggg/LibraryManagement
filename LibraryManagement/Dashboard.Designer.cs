@@ -56,8 +56,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(693, 56);
+            this.menuStrip1.Size = new System.Drawing.Size(1625, 58);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -106,16 +105,18 @@
             this.addStudentToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("addStudentToolStripMenuItem.Image")));
             this.addStudentToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
-            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(201, 56);
+            this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(355, 62);
             this.addStudentToolStripMenuItem.Text = "Add Student";
+            this.addStudentToolStripMenuItem.Click += new System.EventHandler(this.addStudentToolStripMenuItem_Click);
             // 
             // vIewStudentInfoToolStripMenuItem
             // 
             this.vIewStudentInfoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("vIewStudentInfoToolStripMenuItem.Image")));
             this.vIewStudentInfoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.vIewStudentInfoToolStripMenuItem.Name = "vIewStudentInfoToolStripMenuItem";
-            this.vIewStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(201, 56);
+            this.vIewStudentInfoToolStripMenuItem.Size = new System.Drawing.Size(355, 62);
             this.vIewStudentInfoToolStripMenuItem.Text = "VIew Student Info";
+            this.vIewStudentInfoToolStripMenuItem.Click += new System.EventHandler(this.vIewStudentInfoToolStripMenuItem_Click);
             // 
             // issueBooksToolStripMenuItem
             // 
@@ -158,7 +159,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(693, 410);
+            this.ClientSize = new System.Drawing.Size(1625, 860);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
