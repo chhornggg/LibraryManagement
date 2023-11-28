@@ -27,7 +27,7 @@ namespace LibraryManagement
         {
             panel2.Visible = false;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security=True";
+            con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security=True";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
@@ -57,6 +57,7 @@ namespace LibraryManagement
         Int64 rowid;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex == -1) return;
             if (dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
             {
                 bid = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
@@ -64,7 +65,7 @@ namespace LibraryManagement
             }
             panel2.Visible = true;
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security = true";
+            con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
@@ -96,7 +97,7 @@ namespace LibraryManagement
             if(txtBookName.Text != "")
             {
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -110,7 +111,7 @@ namespace LibraryManagement
             else
             {
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -141,7 +142,7 @@ namespace LibraryManagement
                 Int64 quan = Int64.Parse(txtQuantity.Text);
 
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -160,7 +161,7 @@ namespace LibraryManagement
             if (MessageBox.Show("Data Will Deleted. Confirm?", "Confirmation Dialog", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security = true";
+                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = true";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -171,6 +172,11 @@ namespace LibraryManagement
 
                 ViewBook_Load(this, null); 
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
