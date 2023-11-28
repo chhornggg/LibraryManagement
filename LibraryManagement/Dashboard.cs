@@ -42,5 +42,11 @@ namespace LibraryManagement
             AddBooks abs = new AddBooks();
             abs.Show();
         }
+
+        private void bookDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CompleteBookDetails cbd = new CompleteBookDetails();
+            cbd.Show();
+        }
     }
 }
