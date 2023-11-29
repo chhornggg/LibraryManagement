@@ -43,16 +43,10 @@ namespace LibraryManagement
             abs.Show();
         }
 
-        private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        private void bookDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddStudent ast =new AddStudent();
-            ast.Show();
-        }
-
-        private void vIewStudentInfoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ViewStudentInformation vsi = new ViewStudentInformation();
-            vsi.Show();
+            CompleteBookDetails cbd = new CompleteBookDetails();
+            cbd.Show();
         }
     }
 }
