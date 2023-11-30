@@ -26,7 +26,7 @@ namespace LibraryManagement
         private void btnSearchStudent_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-E4UJ6RE\\SQLEXPRESS, database = library, integrated security = True";
+            con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = True";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
@@ -72,7 +72,7 @@ namespace LibraryManagement
         private void btnReturn_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-E4UJ6RE\\SQLEXPRESS, database = library, integrated security = True";
+            con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = True";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             con.Open();

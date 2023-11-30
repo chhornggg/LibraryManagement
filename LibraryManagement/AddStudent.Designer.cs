@@ -57,30 +57,33 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(675, 77);
+            this.panel1.Size = new System.Drawing.Size(1350, 148);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(367, 26);
+            this.label1.Location = new System.Drawing.Point(734, 50);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 24);
+            this.label1.Size = new System.Drawing.Size(238, 44);
             this.label1.TabIndex = 1;
             this.label1.Text = "Add Student";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(274, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(548, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(90, 81);
+            this.pictureBox1.Size = new System.Drawing.Size(160, 156);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -88,16 +91,17 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(2, 85);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 163);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(247, 342);
+            this.pictureBox2.Size = new System.Drawing.Size(484, 658);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel2.Controls.Add(this.btnExit);
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Controls.Add(this.btnRefresh);
@@ -113,17 +117,19 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(250, 85);
+            this.panel2.Location = new System.Drawing.Point(500, 163);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(432, 342);
+            this.panel2.Size = new System.Drawing.Size(864, 658);
             this.panel2.TabIndex = 2;
             // 
             // btnExit
             // 
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Location = new System.Drawing.Point(315, 292);
+            this.btnExit.Location = new System.Drawing.Point(630, 562);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 39);
+            this.btnExit.Size = new System.Drawing.Size(150, 75);
             this.btnExit.TabIndex = 14;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -132,9 +138,10 @@
             // btnSave
             // 
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSave.Location = new System.Drawing.Point(228, 292);
+            this.btnSave.Location = new System.Drawing.Point(456, 562);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 39);
+            this.btnSave.Size = new System.Drawing.Size(150, 75);
             this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Save Info";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -143,9 +150,10 @@
             // btnRefresh
             // 
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Location = new System.Drawing.Point(141, 292);
+            this.btnRefresh.Location = new System.Drawing.Point(282, 562);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 39);
+            this.btnRefresh.Size = new System.Drawing.Size(150, 75);
             this.btnRefresh.TabIndex = 12;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -153,45 +161,51 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(206, 244);
+            this.txtEmail.Location = new System.Drawing.Point(412, 469);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(184, 20);
+            this.txtEmail.Size = new System.Drawing.Size(364, 31);
             this.txtEmail.TabIndex = 11;
             // 
             // txtContact
             // 
-            this.txtContact.Location = new System.Drawing.Point(206, 207);
+            this.txtContact.Location = new System.Drawing.Point(412, 398);
+            this.txtContact.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtContact.Name = "txtContact";
-            this.txtContact.Size = new System.Drawing.Size(184, 20);
+            this.txtContact.Size = new System.Drawing.Size(364, 31);
             this.txtContact.TabIndex = 10;
             // 
             // txtSemester
             // 
-            this.txtSemester.Location = new System.Drawing.Point(206, 162);
+            this.txtSemester.Location = new System.Drawing.Point(412, 312);
+            this.txtSemester.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtSemester.Name = "txtSemester";
-            this.txtSemester.Size = new System.Drawing.Size(184, 20);
+            this.txtSemester.Size = new System.Drawing.Size(364, 31);
             this.txtSemester.TabIndex = 9;
             // 
             // txtDepartment
             // 
-            this.txtDepartment.Location = new System.Drawing.Point(206, 116);
+            this.txtDepartment.Location = new System.Drawing.Point(412, 223);
+            this.txtDepartment.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtDepartment.Name = "txtDepartment";
-            this.txtDepartment.Size = new System.Drawing.Size(184, 20);
+            this.txtDepartment.Size = new System.Drawing.Size(364, 31);
             this.txtDepartment.TabIndex = 8;
             this.txtDepartment.TextChanged += new System.EventHandler(this.txtDepartment_TextChanged);
             // 
             // txtEnrollment
             // 
-            this.txtEnrollment.Location = new System.Drawing.Point(206, 75);
+            this.txtEnrollment.Location = new System.Drawing.Point(412, 144);
+            this.txtEnrollment.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtEnrollment.Name = "txtEnrollment";
-            this.txtEnrollment.Size = new System.Drawing.Size(184, 20);
+            this.txtEnrollment.Size = new System.Drawing.Size(364, 31);
             this.txtEnrollment.TabIndex = 7;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(206, 32);
+            this.txtName.Location = new System.Drawing.Point(412, 62);
+            this.txtName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(184, 20);
+            this.txtName.Size = new System.Drawing.Size(364, 31);
             this.txtName.TabIndex = 6;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
@@ -199,9 +213,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(22, 244);
+            this.label7.Location = new System.Drawing.Point(44, 469);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 20);
+            this.label7.Size = new System.Drawing.Size(216, 37);
             this.label7.TabIndex = 5;
             this.label7.Text = "Student Email";
             // 
@@ -209,9 +224,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 207);
+            this.label6.Location = new System.Drawing.Point(44, 398);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(126, 20);
+            this.label6.Size = new System.Drawing.Size(247, 37);
             this.label6.TabIndex = 4;
             this.label6.Text = "Student Contact";
             // 
@@ -219,9 +235,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(22, 162);
+            this.label5.Location = new System.Drawing.Point(44, 312);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 20);
+            this.label5.Size = new System.Drawing.Size(271, 37);
             this.label5.TabIndex = 3;
             this.label5.Text = "Student Semester";
             // 
@@ -229,9 +246,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 114);
+            this.label4.Location = new System.Drawing.Point(44, 219);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 20);
+            this.label4.Size = new System.Drawing.Size(184, 37);
             this.label4.TabIndex = 2;
             this.label4.Text = "Department";
             // 
@@ -239,9 +257,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 75);
+            this.label3.Location = new System.Drawing.Point(44, 144);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 20);
+            this.label3.Size = new System.Drawing.Size(221, 37);
             this.label3.TabIndex = 1;
             this.label3.Text = "Enrollment No";
             // 
@@ -249,20 +268,22 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 30);
+            this.label2.Location = new System.Drawing.Point(44, 58);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 20);
+            this.label2.Size = new System.Drawing.Size(222, 37);
             this.label2.TabIndex = 0;
             this.label2.Text = "Student Name";
             // 
             // AddStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 428);
+            this.ClientSize = new System.Drawing.Size(1368, 823);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "AddStudent";
             this.Text = "AddStudent";
             this.panel1.ResumeLayout(false);

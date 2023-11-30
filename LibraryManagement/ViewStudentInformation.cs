@@ -30,7 +30,7 @@ namespace LibraryManagement
             if(txtSearchEnrollment.Text != "")
             {
                 label1.Visible = false;
-                Image image = Image.FromFile("E:\\loading.gif");
+                Image image = Image.FromFile("C:\\Users\\senge\\source\\repos\\LibraryManagement\\LibraryManagement\\Resources\\search1.gif");
                 pictureBox1.Image = image;
 
                 SqlConnection con = new SqlConnection();
@@ -48,7 +48,7 @@ namespace LibraryManagement
             else
             {
                 label1.Visible = true;
-                Image image = Image.FromFile("E:\\search.png");
+                Image image = Image.FromFile("C:\\Users\\senge\\source\\repos\\LibraryManagement\\LibraryManagement\\Resources\\search1.gif");
                 pictureBox1.Image = image;
 
                 SqlConnection con = new SqlConnection();
@@ -140,7 +140,7 @@ namespace LibraryManagement
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             ViewStudentInformation_Load(this, null);
-            Image image = Image.FromFile("E:\\search.png");
+            Image image = Image.FromFile("C:\\Users\\senge\\source\\repos\\LibraryManagement\\LibraryManagement\\Resources\\search1.gif");
             pictureBox1.Image = image;
             txtSearchEnrollment.Clear();
 

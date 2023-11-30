@@ -21,7 +21,7 @@ namespace LibraryManagement
         private void CompleteBookDetails_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "data source = DESKTOP-E4UJ6RE\\SQLEXPRESS; database = library; integrated security = True";
+            con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security = True";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
 
@@ -36,6 +36,11 @@ namespace LibraryManagement
             DataSet ds1 = new DataSet();
             da1.Fill(ds1);
             dataGridView2.DataSource = ds1.Tables[0];
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

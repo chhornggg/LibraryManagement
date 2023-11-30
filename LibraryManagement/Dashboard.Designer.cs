@@ -180,22 +180,27 @@ namespace LibraryManagement
 
         private void retuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            ReturnBook rb = new ReturnBook();
+            rb.Show();
         }
 
         private void issueBooksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            IssueBooks ib = new IssueBooks();
+            ib.Show();
         }
 
         private void vIewStudentInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            ViewStudentInformation vsi = new ViewStudentInformation();
+            vsi.Show();
+
         }
 
         private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            AddStudent asd = new AddStudent();
+            asd.Show();
         }
 
         #endregion

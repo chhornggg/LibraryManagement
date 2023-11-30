@@ -43,7 +43,7 @@ namespace LibraryManagement
                 String eid = txtEnrollement.Text;
                 SqlConnection con = new SqlConnection();
                 //database
-                con.ConnectionString = "data source =DESKTOP-E4UJ6RE\\SQLEXPRESS; database= library; integrated security = True";
+                con.ConnectionString = "data source =DESKTOP-CF5N97R\\SQLEXPRESS; database= library; integrated security = True";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = con;
 
@@ -105,7 +105,7 @@ namespace LibraryManagement
         {
             SqlConnection con = new SqlConnection();
             //database
-            con.ConnectionString = "data source =DESKTOP-E4UJ6RE\\SQLEXPRESS; database= library; integrated security = True";
+            con.ConnectionString = "data source =DESKTOP-CF5N97R\\SQLEXPRESS; database= library; integrated security = True";
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             con.Open();
@@ -142,7 +142,7 @@ namespace LibraryManagement
                     String eid = txtEnrollement.Text;
                     SqlConnection con = new SqlConnection();
                     //database
-                    con.ConnectionString = "data source =DESKTOP-E4UJ6RE\\SQLEXPRESS; database= library; integrated security = True";
+                    con.ConnectionString = "data source =DESKTOP-CF5N97R\\SQLEXPRESS; database= library; integrated security = True";
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = con;
                     con.Open();

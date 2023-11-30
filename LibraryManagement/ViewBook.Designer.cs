@@ -64,7 +64,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(14, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1914, 342);
             this.panel1.TabIndex = 0;
@@ -74,7 +74,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(1126, 140);
+            this.label1.Location = new System.Drawing.Point(1009, 122);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(257, 59);
@@ -86,7 +86,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(612, -35);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(586, 363);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -110,7 +110,7 @@
             // 
             this.txtBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBookName.Location = new System.Drawing.Point(694, 369);
-            this.txtBookName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtBookName.Margin = new System.Windows.Forms.Padding(6);
             this.txtBookName.Name = "txtBookName";
             this.txtBookName.Size = new System.Drawing.Size(450, 37);
             this.txtBookName.TabIndex = 2;
@@ -121,7 +121,7 @@
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Location = new System.Drawing.Point(1160, 360);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(6);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(150, 65);
             this.btnRefresh.TabIndex = 3;
@@ -131,9 +131,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(14, 431);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.Size = new System.Drawing.Size(1912, 437);
@@ -143,7 +144,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.Controls.Add(this.txtPDate);
             this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.btnDelete);
@@ -160,7 +161,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(14, 888);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1914, 515);
             this.panel2.TabIndex = 5;
@@ -170,7 +171,7 @@
             // 
             this.txtPDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPDate.Location = new System.Drawing.Point(1354, 92);
-            this.txtPDate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtPDate.Margin = new System.Windows.Forms.Padding(6);
             this.txtPDate.Name = "txtPDate";
             this.txtPDate.Size = new System.Drawing.Size(376, 37);
             this.txtPDate.TabIndex = 15;
@@ -180,7 +181,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(1584, 379);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(6);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(150, 67);
             this.btnCancel.TabIndex = 14;
@@ -193,7 +194,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(1378, 379);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(6);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(150, 67);
             this.btnDelete.TabIndex = 13;
@@ -206,7 +207,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(1168, 379);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(6);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(150, 67);
             this.btnUpdate.TabIndex = 12;
@@ -218,7 +219,7 @@
             // 
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantity.Location = new System.Drawing.Point(1354, 277);
-            this.txtQuantity.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(6);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(376, 37);
             this.txtQuantity.TabIndex = 11;
@@ -227,7 +228,7 @@
             // 
             this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.Location = new System.Drawing.Point(1354, 185);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(6);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(376, 37);
             this.txtPrice.TabIndex = 10;
@@ -269,7 +270,7 @@
             // 
             this.txtPublication.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPublication.Location = new System.Drawing.Point(374, 277);
-            this.txtPublication.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtPublication.Margin = new System.Windows.Forms.Padding(6);
             this.txtPublication.Name = "txtPublication";
             this.txtPublication.Size = new System.Drawing.Size(376, 37);
             this.txtPublication.TabIndex = 5;
@@ -278,7 +279,7 @@
             // 
             this.txtAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAuthor.Location = new System.Drawing.Point(374, 183);
-            this.txtAuthor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtAuthor.Margin = new System.Windows.Forms.Padding(6);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(376, 37);
             this.txtAuthor.TabIndex = 4;
@@ -287,7 +288,7 @@
             // 
             this.txtBName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBName.Location = new System.Drawing.Point(374, 90);
-            this.txtBName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtBName.Margin = new System.Windows.Forms.Padding(6);
             this.txtBName.Name = "txtBName";
             this.txtBName.Size = new System.Drawing.Size(376, 37);
             this.txtBName.TabIndex = 3;
@@ -330,7 +331,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(1940, 1427);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
@@ -338,7 +339,7 @@
             this.Controls.Add(this.txtBookName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ViewBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewBook";
