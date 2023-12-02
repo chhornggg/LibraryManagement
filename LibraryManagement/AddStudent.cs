@@ -42,23 +42,39 @@ namespace LibraryManagement
         {
             if(txtName.Text!="" && txtEmail.Text!="" && txtDepartment.Text!="" && txtSemester.Text!="" && txtContact.Text != "")
             {
-                String name = txtName.Text;
-                String enroll = txtEnrollment.Text;
-                String dep = txtDepartment.Text;
-                String sem = txtSemester.Text;
-                Int64 mobile = Int64.Parse(txtContact.Text);
-                String email = txtEmail.Text;
+                /*  String name = txtName.Text;
+                  String enroll = txtEnrollment.Text;
+                  String dep = txtDepartment.Text;
+                  String sem = txtSemester.Text;
+                  Int64 mobile = Int64.Parse(txtContact.Text);
+                  String email = txtEmail.Text;
 
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security =True";
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = con;
+                  SqlConnection con = new SqlConnection();
+                  con.ConnectionString = "data source = DESKTOP-CF5N97R\\SQLEXPRESS; database = library; integrated security =True";
+                  SqlCommand cmd = new SqlCommand();
+                  cmd.Connection = con;
 
-                con.Open();
-                cmd.CommandText = "insert into NewStudent(sname,enroll,dep,sem,contact,email) values ('" + name + "', '" + enroll + "', '" + dep + "', '" + sem + "', '" + mobile + "', '" + email + "')";
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Data Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  con.Open();
+                  cmd.CommandText = "insert into NewStudent(sname,enroll,dep,sem,contact,email) values ('" + name + "', '" + enroll + "', '" + dep + "', '" + sem + "', '" + mobile + "', '" + email + "')";
+                  cmd.ExecuteNonQuery();
+                  con.Close();
+                  MessageBox.Show("Data Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information); */
+
+                Students newStudents = new Students();
+                newStudents.name = txtName.Text;
+                newStudents.enroll = txtEnrollment.Text;
+                newStudents.dep = txtDepartment.Text;
+                newStudents.sem = txtSemester.Text;
+                newStudents.mobile = Int64.Parse(txtContact.Text);
+                newStudents.email = txtEmail.Text;
+                newStudents.AddToDatabase();
+
+                txtName.Clear();
+                txtEnrollment.Clear();
+                txtDepartment.Clear();
+                txtSemester.Clear();
+                txtContact.Clear();
+                txtEmail.Clear();
             }
             else
             {
@@ -66,6 +82,87 @@ namespace LibraryManagement
             }
         }
 
+        public class Students
+        {
+            private String Sname;
+            private String Enroll;
+            private String department;
+            private String semester;
+            private Int64 contact;
+            private String Email;
+
+            public String name
+            {
+                get { return Sname; }
+                set { Sname = value; }
+            }
+
+            public String enroll
+            {
+                get { return Enroll; }
+                set { Enroll = value; }
+
+            }
+
+            public String dep
+            {
+                get { return department; }
+                set { department = value; }
+            }
+
+            public String sem
+            {
+                get { return semester; }
+                set { semester = value; }
+            }
+
+            public Int64 mobile
+            {
+                get { return contact; }
+                set { contact = value; }
+            }
+
+            public String email
+            {
+                get { return Email; }
+                set { Email = value; }
+            }
+
+            public Students()
+            {
+                Sname = "";
+                Enroll = "";
+                department = "";
+                semester = "";
+                contact = 0;
+                Email = "";
+            }
+
+            public Students(String SName, String Enroll, String department, String semester, Int64 contact, String Email)
+            {
+                this.Sname = SName;
+                this.Enroll = Enroll;
+                this.department = department;
+                this.semester = semester;
+                this.contact = contact;
+                this.email = email;
+            }
+
+            public void AddToDatabase()
+            {
+                SqlConnection con = new SqlConnection();
+                con.ConnectionString = "data source = DESKTOP-DKSBG38\\SQLEXPRESS; database = library; integrated security =True";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+
+                con.Open();
+                cmd.CommandText = "insert into NewStudent(sname,enroll,dep,sem,contact,email) values ('" + name + "', '" + enroll + "', '" + dep + "', '" + sem + "', '" + mobile + "', '" + email + "')";
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("Data Saved!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
         private void txtName_TextChanged(object sender, EventArgs e)
         {
 
