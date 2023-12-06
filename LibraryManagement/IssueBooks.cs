@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace LibraryManagement
 {
@@ -31,6 +32,7 @@ namespace LibraryManagement
                 txtDep.Clear();
                 txtSem.Clear();
                 txtEmail.Clear();
+                txtContact.Clear();
             }
         }
 
@@ -130,7 +132,7 @@ namespace LibraryManagement
             {
                 if(comboBoxBooks.SelectedIndex != -1 && count <=2)
                 {
-                    String enroll = txtEnrollement.Text;
+                    /*String enroll = txtEnrollement.Text;
                     String sname = txtName.Text;
                     String sdep = txtDep.Text;
                     String sem = txtSem.Text;
@@ -138,9 +140,10 @@ namespace LibraryManagement
                     String email = txtEmail.Text;
                     String bookname = comboBoxBooks.Text;
                     String bookIssueDate = dateTimePicker.Text;
+                    
 
-                    String eid = txtEnrollement.Text;
-                    SqlConnection con = new SqlConnection();
+                    String eid = txtEnrollement.Text; */
+                    /* SqlConnection con = new SqlConnection();
                     //database
                     con.ConnectionString = "data source =DESKTOP-CF5N97R\\SQLEXPRESS; database= library; integrated security = True";
                     SqlCommand cmd = new SqlCommand();
@@ -151,8 +154,21 @@ namespace LibraryManagement
                     con.Close();
 
                     MessageBox.Show("Book Issued.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    */
+                    IRBook issueBook = new IRBook();
+                    issueBook.stu.enroll = txtEnrollement.Text;
+                    issueBook.stu.name = txtName.Text;
+                    issueBook.stu.dep = txtDep.Text;
+                    issueBook.stu.sem = txtSem.Text;
+                    issueBook.stu.mobile = Int64.Parse(txtContact.Text);
+                    issueBook.stu.email = txtEmail.Text;
+                    issueBook.book.BookName = comboBoxBooks.Text;
+                    issueBook.BookIssueDate = dateTimePicker.Text;
+
+                    issueBook.AddToDatabase();
 
                 }
+                    
                 else
                 {
                     MessageBox.Show("Select Book. OR Maximum number of Book Has been ISSUE", "No Book Selected", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -176,6 +192,40 @@ namespace LibraryManagement
                 this.Close();
             }
             
+        }
+    } 
+    
+    public class IRBook
+    {
+        private String bookIssueDate;
+        public Book book;
+        public Students stu; 
+
+        public String BookIssueDate
+        {
+            get { return bookIssueDate; }
+            set { bookIssueDate = value; }
+        }
+
+        public IRBook()
+        {
+            book = new Book();
+            stu = new Students();
+        }
+
+        public void AddToDatabase()
+        {
+            SqlConnection con = new SqlConnection();
+            //database
+            con.ConnectionString = "data source =DESKTOP-CF5N97R\\SQLEXPRESS; database= library; integrated security = True";
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            con.Open();
+            cmd.CommandText = cmd.CommandText = "insert into IRBook (std_enroll, std_name, std_dep, std_sem, std_contact, std_email, book_name, book_issue_date) values ('" + stu.enroll + "','" + stu.name + "','" + stu.dep + "','" + stu.sem + "'," + stu.mobile + ",'" + stu.email + "','" + book.BookName + "','" + BookIssueDate + "')";
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("Book Issued.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
